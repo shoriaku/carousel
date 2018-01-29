@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Carousel Sample</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- My Styles -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- Owl Carousel Styles -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  <!--Animate Style Sheet -->
+    <link href="css/animate.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Carousel</h1>
+    </header>
+
+    <div class="owl-carousel owl-theme">
+      <div><img src="img/don3.jpg" alt=""></div>
+      <div><img src="img/don1.png" alt=""></div>
+      <div><img src="img/don2.jpg" alt=""></div>
+      <div><img src="img/rest.jpg" alt=""></div>
+      <div><img src="img/don4.jpg" alt=""></div>
+
+
+    </div>
+
+    <footer>
+
+    </footer>
+
+  </div>
+
+  <!-- first load jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- owl carousel stuff -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          autoplay: true,
+          autoplayTimeout: 3500,
+          dots: true,
+          items: 2,
+          loop: true,
+          margin: 6,
+          stagePadding:30,
+          smartSpeed:450,
+          autoplayHoverPause: true
+
+      })
+    });
+  </script>
+
+</body>
+</html>
